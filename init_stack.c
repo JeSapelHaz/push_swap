@@ -6,7 +6,7 @@
 /*   By: hbutt <hbutt@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/27 14:08:30 by hbutt             #+#    #+#             */
-/*   Updated: 2024/06/21 17:36:20 by hbutt            ###   ########.fr       */
+/*   Updated: 2024/06/21 17:51:06 by hbutt            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static void	commas_args(t_stack **stack, char *av)
 		j++;
 	if (j < 2)
 	{
-		ft_error("Error : Rajoute des nombres chef, pourquoi t'es timide comme ca\n");
+		ft_error("Error : Rajoute des nombres chef,pq t'es timide comme ca\n");
 	}
 	check_args(tmp, 2);
 	while (i < j)
@@ -68,7 +68,7 @@ void	init_stack(t_stack **stack, int ac, char **av)
 	i = 1;
 	if (ac < 2)
 	{
-		ft_error("Error : Rajoute des nombres chef, pourquoi t'es timide comme ca\n");
+		ft_error("Error : Rajoute des nombres chef,pq t'es timide comme ca\n");
 	}
 	if (ac == 2)
 	{
