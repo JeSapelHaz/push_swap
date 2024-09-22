@@ -25,6 +25,7 @@ int	main(int ac, char **av)
 	*stack_a = NULL;
 	*stack_b = NULL;
 	init_stack(stack_a, ac, av);
+	print_all_stacks(stack_a, stack_b);
 	if (already_sorted(stack_a))
 	{
 		free_stack(stack_a);
@@ -35,6 +36,7 @@ int	main(int ac, char **av)
 		sort_small(stack_a, stack_b);
 	else
 		sort_big(stack_a, stack_b);
+	print_all_stacks(stack_a, stack_b);
 	free_stack(stack_a);
 	free_stack(stack_b);
 	return (0);
